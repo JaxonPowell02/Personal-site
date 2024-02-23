@@ -1,0 +1,33 @@
+/* Colors for site #DEC183 #BAA26E #E6C887 #99855A #786847 #544932 #9474A1 */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body, header{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h1{
+    color: #9474a1;
+    font-family: "Dancing Script";
+    font-size: 80px;   
+    margin-bottom: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 60px;
+    color: #9474a1;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #9474a1;
+    border-radius: 8px;
+    color: #baa26e;
+}
+
+footer{
+    margin-top: 500px;
+}
