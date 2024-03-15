@@ -12,6 +12,7 @@ body{
 header{
     text-align: center;   
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 h1{
@@ -20,6 +21,12 @@ h1{
     font-size: 80px;   
     margin-bottom: 75px;
     margin-top: -50px;
+}
+
+h3{
+  font-size: 45px;
+  color: #9474a1;
+  font-family: "Dancing Script";
 }
 
 nav a{
@@ -35,6 +42,10 @@ nav a:hover{
     background-color: #9474a1;
     border-radius: 8px;
     color: #baa26e;
+}
+
+.blogphotos{
+  width: 100%;
 }
 
 * {box-sizing:border-box}
@@ -94,10 +105,7 @@ nav a:hover{
 
 .cimages{
     width: 90%;
-    
 }
-
-
 
 /* The dots/bullets/indicators */
 .dot {
