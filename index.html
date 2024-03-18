@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emily Powell Photography | Home</title>
-    <link rel="stylesheet" href="wwr/styles/personalsitestyles.css"/>
+    <link rel="stylesheet" href="styles/personalsitestyles.css"/>
+    <script src="./script/slide.js" defer></script>
 
 </head>
 <body>
@@ -12,9 +13,9 @@
         <h1>Emily Powell Photography</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="wwr/portfolio.html">Portfolio</a>
-            <a href="wwr/blog.html">Blog</a>
-            <a href="wwr/contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 <main>
@@ -22,39 +23,39 @@
 <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <img class="cimages" src="wwr\images\3D8A9899.JPG" style="width:100%">
+      <img class="cimages" src="images\3D8A9899.JPG" style="width:100%">
     </div>
   
     <div class="mySlides fade">
-      <img class="cimages" src="wwr\images\3D8A9946.JPG" style="width:100%">
+      <img class="cimages" src="images\3D8A9946.JPG" style="width:100%">
     </div>
   
     <div class="mySlides fade">
-      <img class="cimages" src="wwr\images\17.JPG" style="width:100%">
+      <img class="cimages" src="images\17.JPG" style="width:100%">
     </div>
   
     <div class="mySlides fade">
-        <img class="cimages" src="wwr\images\21.JPG" style="width:100%">
+        <img class="cimages" src="images\21.JPG" style="width:100%">
       </div>
     
       <div class="mySlides fade">
-        <img class="cimages" src="wwr\images\22.JPG" style="width:100%">
+        <img class="cimages" src="images\22.JPG" style="width:100%">
       </div>
     
       <div class="mySlides fade">
-        <img class="cimages" src="wwr\images\IMG_4848.jpg" style="width:100%">
+        <img class="cimages" src="images\IMG_4848.jpg" style="width:100%">
       </div>
 
       <div class="mySlides fade">
-        <img class="cimages" src="wwr\images\IMG_5302.JPG" style="width:100%">
+        <img class="cimages" src="images\IMG_5302.JPG" style="width:100%">
       </div>
     
       <div class="mySlides fade">
-        <img class="cimages" src="wwr\images\IMG_5701.JPG" style="width:100%">
+        <img class="cimages" src="images\IMG_5701.JPG" style="width:100%">
       </div>
     
       <div class="mySlides fade">
-        <img class="cimages" src="wwr\images\Photo 2024-02-28 10.42.50 AM.jpg" style="width:100%">
+        <img class="cimages" src="images\Photo 2024-02-28 10.42.50 AM.jpg" style="width:100%">
       </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -75,11 +76,11 @@
 
   <section>
       <h3>Services</h3>
-      <img class="servicesphoto" src="wwr\images\09.jpg" alt="A picture of a family in a hillside">
+      <img class="servicesphoto" src="images\09.jpg" alt="A picture of a family in a hillside">
       <h2>Family photos</h2>
-      <img class="servicesphoto" src="wwr\images\30.JPG" alt="A picture of a family laying in the grass">
+      <img class="servicesphoto" src="images\30.JPG" alt="A picture of a family laying in the grass">
       <h2>Mini sessions</h2>
-      <img class="servicesphoto" src="wwr\images\36.JPG" alt="A picture of a girl by some flowers">
+      <img class="servicesphoto" src="images\36.JPG" alt="A picture of a girl by some flowers">
       <h2>Senior/ sessions</h2>
   </section>
   
@@ -101,21 +102,5 @@
     </div>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}
-          slides[slideIndex-1].style.display = "block";
-          setTimeout(showSlides, 5000); 
-        }
-    </script>
 </body>
 </html>
