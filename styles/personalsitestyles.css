@@ -24,7 +24,7 @@ h1{
 }
 
 h3{
-  font-size: 45px;
+  font-size: 60px;
   color: #9474a1;
   font-family: "Dancing Script";
 }
@@ -52,11 +52,12 @@ nav a:hover{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 60%;
   position: relative;
   margin: auto;
   width: 90%;
   height: 500px;
+  margin-bottom: 250px;
 }
 
 /* Hide the images by default */
@@ -65,63 +66,93 @@ nav a:hover{
   margin-top: 100px;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
 .cimages{
     width: 90%;
+    border-radius: 20px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.blogphotos img{
+  width: 25%;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.services{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
+
+.servicesphoto1{
+  width: 400px;
+  height: 275px;
+  align-self: center;
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.servicesphoto1{
+  border: 10px solid #9474a1;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.servicesphoto1:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+.servicesphoto2{
+  width: 400px;
+  height: 275px;
+  align-self: center;
+  grid-column: 8/10;
+  grid-row: 1/2;
+}
+
+.servicesphoto2{
+  border: 10px solid #9474a1;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.servicesphoto2:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+.servicesphoto3{
+  width: 300px;
+  height: 450px;
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+.servicesphoto3{
+  border: 10px solid #9474a1;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.servicesphoto3:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+.services h2{
+  grid-row: 2/3;
+}
+
+#familyphotos{
+  grid-column: 2/4;
+}
+
+#minisessions{
+  grid-column: 8/10;
+}
+
+#seniorsessions{
+  grid-column: 5/7;
+}
+
+
 
 /* Fading animation */
 .fade {
@@ -134,11 +165,8 @@ nav a:hover{
   to {opacity: 1}
 }
 
-.servicesphoto{
-  width: 100%;
-}
 
 footer{
-    margin-top: 500px;
+    margin-top: 250px;
     background-color: #9474a1;
 }
