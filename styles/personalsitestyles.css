@@ -178,6 +178,7 @@ nav a:hover{
   grid-column: 2/4;
   grid-row: 1/3;
   box-shadow: 5px 5px 10px #6f7364;
+  border-radius: 15px;
 }
 
 #portfoliophotocamera{
@@ -187,6 +188,7 @@ nav a:hover{
   z-index: 1;
   margin-top: 250px;
   box-shadow: 5px 5px 10px #6f7364;
+  border-radius: 15px;
 }
 
 .portfolio h3{
@@ -219,6 +221,10 @@ nav a:hover{
   text-align: center;
   margin: 0 auto;
   margin-top: 200px;
+}
+
+.blogphotos .mySlides{
+  border-radius: 20px;
 }
 
 .blogphotos img{
