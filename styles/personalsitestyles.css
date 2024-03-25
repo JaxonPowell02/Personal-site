@@ -64,6 +64,7 @@ nav a:hover{
 .mySlides {
   display: none;
   margin-top: 100px;
+  margin: 0 auto;
 }
 
 .cimages{
@@ -71,9 +72,7 @@ nav a:hover{
     border-radius: 20px;
 }
 
-.blogphotos img{
-  width: 25%;
-}
+
 
 .services{
   display: grid;
@@ -166,7 +165,69 @@ nav a:hover{
 }
 
 
+
+/*portfolio page css */
+.portfolio{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10,100px);
+}
+
+#portfoliophotositting{
+  width: 500px;
+  grid-column: 2/4;
+  grid-row: 1/3;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+#portfoliophotocamera{
+  width: 350px;
+  grid-column: 3/5;
+  grid-row: 3/6;
+  z-index: 1;
+  margin-top: 250px;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+
+.portfolio h3{
+  grid-column: 5/10;
+  padding-bottom: 50px;
+}
+
+.portfolio p{
+  grid-column: 5/10;
+  font-size: 18px;
+}
+
+#portfoliosubheader{
+  grid-row: 3/4;
+}
+
+#paragraph1{
+  grid-row: 4/5;
+}
+
+#paragraph2{
+  grid-row: 5/6;
+}
+
+#paragrpah3{
+  grid-row: 6/7;
+}
+
+.blogphotos{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.blogphotos img{
+  width: 40%;
+}
+
 footer{
     margin-top: 250px;
+    padding-top: 25px;
     background-color: #9474a1;
+
 }
