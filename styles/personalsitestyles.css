@@ -231,9 +231,32 @@ nav a:hover{
   width: 38%;
 }
 
+.footergrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.socialanddetails{
+  font-size: 18px;
+}
+
+.socialanddetails a{
+  text-decoration: none;
+}
+
+.social img{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.contactinfo{
+  font-size: 20px;
+  margin-top: 50px;
+}
+
 footer{
     margin-top: 250px;
+    padding-bottom: 50px;
     padding-top: 25px;
     background-color: #9474a1;
-
 }
