@@ -1,0 +1,74 @@
+/* Default styles for light theme */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 8px gray;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: #fff; /* White text for better contrast */
+}
+
+.header h2 {
+    color: #5A5A5A; /* Adjust color for dark theme if needed */
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.content ol {
+    margin-left: 20px;
+}
+
+.content ol li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer img {
+    max-width: 150px;
+}
+
+button{
+    text-align: center;
+}
+
+/* Default light theme */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+/* Additional styles remain the same */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 4px 8px gray;
+}
