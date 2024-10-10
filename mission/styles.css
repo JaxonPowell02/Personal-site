@@ -1,74 +1,134 @@
-/* Default styles for light theme */
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    margin: 0;
+    color: var(--text-dark);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+}
+
+.menu-button {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    gap: 10px;
     padding: 20px;
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    box-shadow: 0 4px 8px gray;
+/* On medium screens (above 600px), display 2 images in a row */
+@media screen and (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* Dark theme styles */
-body.dark {
-    background-color: #333;
-    color: #fff; /* White text for better contrast */
+/* On large screens (above 1000px), display 3 images in a row */
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.header h2 {
-    color: #5A5A5A; /* Adjust color for dark theme if needed */
+figure {
+    margin: 0;
 }
 
-.content {
-    margin: 20px 0;
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
-.content p {
-    margin-bottom: 20px;
-    font-size: 16px;
-    text-align: justify;
-}
-
-.content ol {
-    margin-left: 20px;
-}
-
-.content ol li {
-    margin-bottom: 10px;
-}
-
-.footer {
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
     text-align: center;
-    margin-top: 40px;
+    padding: 10px;
 }
 
-.footer img {
-    max-width: 150px;
+/* Modal styles */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9); /* Darken background for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-button{
-    text-align: center;
+.viewer img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Default light theme */
-body {
-    background-color: #fff;
-    color: #333;
-}
-
-/* Dark theme styles */
-body.dark {
-    background-color: #333;
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 11;
 }
+/* Media Query for larger screens */
+@media screen and (min-width: 1000px) {
+    .viewer img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        padding: 20px; /* Adds padding around the image in full screen */
+    }
 
-/* Additional styles remain the same */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    box-shadow: 0 4px 8px gray;
+    .viewer {
+        padding: 40px;
+    }
 }
