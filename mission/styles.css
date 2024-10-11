@@ -125,7 +125,7 @@ footer {
         max-width: 90%;
         max-height: 90%;
         object-fit: contain;
-        padding: 20px; /* Adds padding around the image in full screen */
+        padding: 20px; 
     }
 
     .viewer {
