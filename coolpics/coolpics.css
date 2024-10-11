@@ -31,6 +31,7 @@ h1 {
 .menu-button {
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 nav ul {
@@ -48,9 +49,23 @@ nav a {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 10px;
     padding: 20px;
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+}
+
+/* On medium screens (above 600px), display 2 images in a row */
+@media screen and (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* On large screens (above 1000px), display 3 images in a row */
+@media screen and (min-width: 1000px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 figure {
@@ -70,22 +85,50 @@ footer {
     padding: 10px;
 }
 
-/* Responsive Styles */
-@media screen and (min-width: 700px) {
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-
+/* Modal styles */
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9); /* Darken background for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+.viewer img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 11;
+}
+/* Media Query for larger screens */
 @media screen and (min-width: 1000px) {
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
+    .viewer img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        padding: 20px; 
     }
-    nav {
-        display: block;
-    }
-    .menu-button {
-        display: none;
+
+    .viewer {
+        padding: 40px;
     }
 }
