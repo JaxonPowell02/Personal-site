@@ -52,5 +52,4 @@ function closeViewer() {
     }
 }
 
-// Add click event listener to the gallery section
 document.querySelector('.gallery').addEventListener('click', viewHandler);
