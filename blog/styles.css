@@ -61,6 +61,7 @@ header h1 {
     max-width: 600px;
     border-top: 1px solid var(--color-gold);
     border-bottom: 1px solid var(--color-gold);
+    text-align: center;
 }
 
 /* Navigation Grid */
@@ -78,6 +79,7 @@ header h1 {
 .main-nav a {
     font-size: 1.2rem;
     line-height: 2;
+    text-align: center;
 }
 
 /* Main Content Grid */
@@ -111,6 +113,7 @@ main {
     max-width: 200px;
     height: auto;
     margin: 1rem 0;
+    margin-left: 25%
 }
 
 .review-content h2 {
