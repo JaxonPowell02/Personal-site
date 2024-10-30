@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.card-front, .card-back {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+    background: #F5F5F5;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.card-image {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.total-amount {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card-number {
+    margin-bottom: 10px;
+}
+
+.cardholder-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#cardholder-name{
+    width: 125px;
+}
+
+#expiration-date{
+    width: 75px
+}
+
+.card-back {
+    background: #E0E0E0;
+    padding-top: 30px;
+    padding: 25px;
+    margin-top: -150px;
+    margin-left: 175px;
+}
+
+.magnetic-strip {
+    height: 40px;
+    background: #333;
+    margin-bottom: 30px;
+    width: 100%;
+    margin-left: 25px
+}
+
+.cvv-back {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.cvv-back label {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.cvv-back input {
+    width: 50px;
+}
