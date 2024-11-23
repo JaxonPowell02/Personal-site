@@ -191,6 +191,10 @@ footer {
     color: #666;
 }
 
+#search-button{
+    width: 20px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
     header {

@@ -19,6 +19,7 @@
     <title>Recipe Book - Discover Delicious Recipes</title>
     <link rel="icon" type="image/png" href="images/recipe-book.png">
     <link rel="stylesheet" href="styles.css">
+    <script defer type="module" src="recipes.js"></script>
 </head>
 <body>
     <header>
@@ -27,9 +28,9 @@
             <h1>RECIPEBOOK</h1>
         </div>
         <form class="search-form">
-            <input type="search" placeholder="Find a recipe" aria-label="Search for recipes">
-            <button type="submit" aria-label="Search">
-                <img src="images/search-icon.svg" alt="">
+            <input type="search" id="search-input" placeholder="Find a recipe" aria-label="Search for recipes">
+            <button type="submit" id="search-button" aria-label="Search">
+                <img src="./images/search.svg" alt="search icon">
             </button>
         </form>
     </header>
@@ -37,7 +38,7 @@
     <main>
         <section class="recipe-grid">
             <article class="recipe-card">
-                <img src="images/apple-crisp.jpg" alt="Apple Crisp with vanilla ice cream" class="recipe-image">
+                <img src="./images/apple-crisp.jpg" alt="Apple Crisp with vanilla ice cream" class="recipe-image">
                 <div class="recipe-content">
                     <div class="recipe-tags">
                         <span class="tag">dessert</span>
@@ -68,6 +69,6 @@
         </p>
     </footer>
 
-    <script type="module" src="recipes.js"></script>
+
 </body>
 </html>
